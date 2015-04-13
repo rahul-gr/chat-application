@@ -25,7 +25,7 @@ public class ClientPage extends Frame implements Runnable {
 		textfiled = new TextField(10);
 		onlineColour = new TextField("Online", 15);
 		chatArea = new TextArea(2, 2);
-		userOnlineDispayArea = new TextArea(2, 2);
+		userOnlineDispayArea = new TextArea("online users:",2, 2);
 		btnSend = new Button("Send");
 		btnClose = new Button("Close");
 		soc = new Socket("localhost", 5555);
