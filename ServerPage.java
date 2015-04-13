@@ -38,7 +38,7 @@ public class ServerPage {
 
 			String LoginName = din.readUTF();
 			for (int i = 0; i < LoginNames.size(); i++) {
-				if (LoginName == LoginNames.elementAt(i)) {
+				if (LoginName.equalsIgnoreCase((String) LoginNames.elementAt(i))) {
 					flag = 0;
 					break;
 				}
